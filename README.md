@@ -1,3 +1,3 @@
 # MLB
 
-Mountain Lakes Bowling Team 1 - Application for managing bowlers and schedules for the local league.
+Mountain Lakes Bowling - Application for managing bowlers and schedules for the local league.
