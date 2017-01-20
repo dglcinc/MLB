@@ -23,7 +23,7 @@ provider:
 
 functions:
   createBowler:
-    handler: bowler/create.create
+    handler: bowlers/create.create
     events:
       - http:
           path: bowler
@@ -32,7 +32,7 @@ functions:
 
 
   listBowlers:
-    handler: bowler/list.list
+    handler: bowlers/list.list
     events:
       - http:
           path: bowlers
@@ -40,26 +40,26 @@ functions:
           cors: true
 
   getBowler:
-    handler: bowler/get.get
+    handler: bowlers/get.get
     events:
       - http:
-          path: bowler/{b_uid}
+          path: bowler/{uid}
           method: get
           cors: true
 
   updateBowler:
-    handler: bowler/update.update
+    handler: bowlers/update.update
     events:
       - http:
-          path: bowler/{b_uid}
+          path: bowler/{uid}
           method: put
           cors: true
 
   deleteBowler:
-    handler: bowler/delete.delete
+    handler: bowlers/delete.delete
     events:
       - http:
-          path: bowler/{b_uid}
+          path: bowler/{uid}
           method: delete
           cors: true
 
@@ -67,15 +67,15 @@ resources:
   Resources:
     BowlerTable:
       Type: 'AWS::DynamoDB::Table'
-      DeletionPolicy: Retain
+      #DeletionPolicy: Retain
       Properties:
         AttributeDefinitions:
-          - AttributeName: "b_uid"
+          - AttributeName: "uid"
             AttributeType: S
           - AttributeName: "lastname"
             AttributeType: S
         KeySchema:
-          - AttributeName: "b_uid"
+          - AttributeName: "uid"
             KeyType: "HASH"
           - AttributeName: "lastname"
             KeyType: "RANGE"
@@ -85,17 +85,17 @@ resources:
         TableName: 'mlb_bowler'
     EventTable:
       Type: 'AWS::DynamoDB::Table'
-      DeletionPolicy: Retain
+      #DeletionPolicy: Retain
       Properties:
         AttributeDefinitions:
-          - AttributeName: "e_uid"
+          - AttributeName: "date"
             AttributeType: S
-          - AttributeName: "y_uid"
+          - AttributeName: "season"
             AttributeType: S
         KeySchema:
-          - AttributeName: "e_uid"
+          - AttributeName: "date"
             KeyType: "HASH"
-          - AttributeName: "y_uid"
+          - AttributeName: "season"
             KeyType: "RANGE"
         ProvisionedThroughput:
           ReadCapacityUnits: 1
@@ -103,15 +103,15 @@ resources:
         TableName: 'mlb_event'
     ScheduleTable:
       Type: 'AWS::DynamoDB::Table'
-      DeletionPolicy: Retain
+      #DeletionPolicy: Retain
       Properties:
         AttributeDefinitions:
-          - AttributeName: "s_uid"
+          - AttributeName: "uid"
             AttributeType: S
           - AttributeName: "e_uid"
             AttributeType: S
         KeySchema:
-          - AttributeName: "s_uid"
+          - AttributeName: "uid"
             KeyType: "HASH"
           - AttributeName: "e_uid"
             KeyType: "RANGE"
