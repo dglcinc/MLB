@@ -4,7 +4,7 @@ import json, decimal, collections, sys
 
 if len(sys.argv) != 5:
 	print("program to load a json file to a DynamoDB table")
-	print("usage: ", sys.argv[0], "file tablename gen-uid[true|false] parse-only[true|false]")
+	print("usage: ", sys.argv[0], "file tablename gen-uid[true|false] parse-only[parse|load]")
 	sys.exit()
 filename = sys.argv[1]
 gen_uid = sys.argv[3]
@@ -23,5 +23,5 @@ with open(filename) as json_file:
 
         print("Adding to table(", sys.argv[2], ") item:", nb)
 
-	if parse_only == 'false':
+	if parse_only == 'load':
         	table.put_item(Item=nb)
