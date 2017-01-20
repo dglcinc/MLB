@@ -1,0 +1,266 @@
+[
+    {
+        "firstname": "Bill",
+        "lastname": "Albergo",
+        "clubmember": false,
+        "team": 1,
+        "address": "78 Lookout Road",
+        "city": "Mountain Lakes",
+        "state": "NJ",
+        "zip": "07046",
+        "cellphone": "917-620-2860",
+        "homephone": "973-588-3033",
+        "email": "balbergo@optonline.net",
+        "shirts": [
+        {
+          "nickname": "Big Bad Bill",
+          "size": "L"
+        }
+      ],
+      "roles": [
+        "bowler"
+      ]
+    },
+    {
+        "firstname": "Jeff",
+        "lastname": "Cassidy",
+        "clubmember": false,
+        "team": 1,
+        "address": "256 Boulevard",
+        "city": "Mountain Lakes",
+        "state": "NJ",
+        "zip": "07046",
+        "cellphone": "973-906-2201",
+        "homephone": "973-394-0805",
+        "email": "jcassidy@yahoo.com",
+        "shirts": [
+            {
+              "nickname": "Jeff",
+              "size": "XL"
+            }
+        ],
+        "roles": [
+            "bowler"
+        ]
+    },
+    {
+      "firstname": "Tom",
+      "lastname": "Dagger",
+      "clubmember": false,
+        "team": 1,
+      "address": "41 Wilcox Drive",
+      "city": "Mountain Lakes",
+      "state": "NJ",
+      "zip": "07046",
+      "cellphone": "908-230-1597",
+      "homephone": "973-316-0038",
+      "email": "tgdagger@gmail.com",
+      "shirts": [
+        {
+          "nickname": "Tom",
+          "size": "L"
+        }
+      ],
+      "roles": [
+        "bowler"
+      ]
+    },
+    {
+      "firstname": "Ted",
+      "lastname": "Harvey",
+        "team": 1,
+      "clubmember": false,
+      "address": "14 Dartmouth Road",
+      "city": "Mountain Lakes",
+      "state": "NJ",
+      "zip": "07046",
+      "cellphone": "609-384-4169",
+      "email": "edward.p.harvey@gmail.com",
+      "shirts": [
+        {
+          "nickname": "Dutch",
+          "size": "L"
+        }
+      ],
+      "roles": [
+        "bowler"
+      ]
+    },
+    {
+      "firstname": "David",
+      "lastname": "Keyt",
+      "clubmember": true,
+        "team": 1,
+      "address": "109 Hanover Road",
+      "city": "Mountain Lakes",
+      "state": "NJ",
+      "zip": "07046",
+      "cellphone": "312-576-8035",
+      "email": "dkeyt@yahoo.com",
+      "altemail": "david.keyt@mercer.com",
+      "shirts": [
+        {
+          "nickname": "Brooklyn",
+          "size": "L"
+        }
+      ],
+      "roles": [
+        "bowler"
+      ]
+    },
+    {
+      "firstname": "Brian",
+      "lastname": "Lewis",
+      "clubmember": true,
+        "team": 1,
+      "address": "75 Crestview",
+      "city": "Mountain Lakes",
+      "state": "NJ",
+      "zip": "07046",
+      "cellphone": "973-803-6317",
+      "homephone": "973-744-9695",
+      "email": "brilewis@yahoo.com",
+      "shirts": [
+        {
+          "nickname": "King Pin",
+          "size": "XL"
+        }
+      ],
+      "roles": [
+        "bowler"
+      ]
+    },
+    {
+      "firstname": "David",
+      "lastname": "Lewis",
+      "clubmember": false,
+        "team": 1,
+      "address": "68 Lookout Road",
+      "city": "Mountain Lakes",
+      "state": "NJ",
+      "zip": "07046",
+      "cellphone": "201-213-8814",
+      "homephone": "973-331-0775",
+      "email": "david@dglc.com",
+      "shirts": [
+        {
+          "nickname": "King Pin",
+          "size": "L"
+        }
+      ],
+      "roles": [
+        "bowler",
+        "captain",
+        "organizer"
+      ]
+    },
+    {
+      "firstname": "Peter",
+      "lastname": "Nix",
+      "clubmember": false,
+      "team": 1,
+      "address": "11 Hillcrest Road",
+      "city": "Mountain Lakes",
+      "state": "NJ",
+      "zip": "07046",
+      "cellphone": "201-738-8292",
+      "homephone": "973-334-2622",
+      "email": "pnix@optonline.net",
+      "shirts": [
+        {
+          "nickname": "Pocket Pete",
+          "size": "M"
+        }
+      ],
+      "roles": [
+        "bowler"
+      ]
+    },
+    {
+      "firstname": "TJ",
+      "lastname": "Kanaris",
+      "clubmember": true,
+      "team": 1,
+      "address": "21 Yorke Road",
+      "city": "Mountain Lakes",
+      "state": "NJ",
+      "zip": "07046",
+      "cellphone": "908-645-2677",
+      "email": "tj.kanaris@gmail.com",
+      "shirts": [
+        {
+          "nickname": "Sleeper",
+          "size": "L"
+        }
+      ],
+      "roles": [
+        "bowler"
+      ]
+    },
+    {
+      "firstname": "John",
+      "lastname": "Maione Jr.",
+      "clubmember": false,
+      "team": 1,
+      "address": "30 Powerville Road",
+      "city": "Mountain Lakes",
+      "state": "NJ",
+      "zip": "07046",
+      "cellphone": "201-400-7533",
+      "email": "johnjr@maionehomes.com",
+      "shirts": [
+        {
+          "nickname": "Buddy",
+          "size": "L"
+        }
+      ],
+      "roles": [
+        "bowler"
+      ]
+    },
+    {
+      "firstname": "Todd",
+      "lastname": "Terhune",
+      "clubmember": false,
+      "team": 1,
+      "address": "5 Whitby Road",
+      "city": "Mountain Lakes",
+      "state": "NJ",
+      "zip": "07046",
+      "cellphone": "973-723-3349",
+      "homephone": "973-265-8608",
+      "email": "tterhune@sh-law.net",
+      "altemail": "terhunet@optimum.net",
+      "shirts": [
+        {
+          "nickname": "Boom-er",
+          "size": "L"
+        }
+      ],
+      "roles": [
+        "bowler"
+      ]
+    },
+    {
+      "firstname": "Gordon",
+      "lastname": "Stuss",
+      "clubmember": false,
+      "team": 1,
+      "address": "99 Morris Ave.",
+      "city": "Mountain Lakes",
+      "state": "NJ",
+      "zip": "07046",
+      "cellphone": "973-454-4186",
+      "homephone": "973-334-0145",
+      "email": "gastuss@aol.com",
+      "shirts": [
+        {
+          "nickname": "Gordon",
+          "size": "2XL"
+        }
+      ],
+      "roles": [
+        "bowler"
+      ]
+    }
+]

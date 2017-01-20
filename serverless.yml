@@ -1,0 +1,122 @@
+service: MLB
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  stage: dev
+  memorySize: 256
+  #deploymentBucket: guru.dgl.${self:provider.region}.deploys
+  #role: arn:aws::MLB:role/role
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:DescribeTable
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource: "arn:aws:dynamodb:*:*:*"
+
+functions:
+  createBowler:
+    handler: bowler/create.create
+    events:
+      - http:
+          path: bowler
+          method: post
+          cors: true
+
+
+  listBowlers:
+    handler: bowler/list.list
+    events:
+      - http:
+          path: bowlers
+          method: get
+          cors: true
+
+  getBowler:
+    handler: bowler/get.get
+    events:
+      - http:
+          path: bowler/{b_uid}
+          method: get
+          cors: true
+
+  updateBowler:
+    handler: bowler/update.update
+    events:
+      - http:
+          path: bowler/{b_uid}
+          method: put
+          cors: true
+
+  deleteBowler:
+    handler: bowler/delete.delete
+    events:
+      - http:
+          path: bowler/{b_uid}
+          method: delete
+          cors: true
+
+resources:
+  Resources:
+    BowlerTable:
+      Type: 'AWS::DynamoDB::Table'
+      DeletionPolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: "b_uid"
+            AttributeType: S
+          - AttributeName: "lastname"
+            AttributeType: S
+        KeySchema:
+          - AttributeName: "b_uid"
+            KeyType: "HASH"
+          - AttributeName: "lastname"
+            KeyType: "RANGE"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: 'mlb_bowler'
+    EventTable:
+      Type: 'AWS::DynamoDB::Table'
+      DeletionPolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: "e_uid"
+            AttributeType: S
+          - AttributeName: "y_uid"
+            AttributeType: S
+        KeySchema:
+          - AttributeName: "e_uid"
+            KeyType: "HASH"
+          - AttributeName: "y_uid"
+            KeyType: "RANGE"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: 'mlb_event'
+    ScheduleTable:
+      Type: 'AWS::DynamoDB::Table'
+      DeletionPolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: "s_uid"
+            AttributeType: S
+          - AttributeName: "e_uid"
+            AttributeType: S
+        KeySchema:
+          - AttributeName: "s_uid"
+            KeyType: "HASH"
+          - AttributeName: "e_uid"
+            KeyType: "RANGE"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: 'mlb_schedule'
+        
