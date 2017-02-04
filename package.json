@@ -1,9 +1,10 @@
 {
   "name": "MLB",
   "version": "1.1.0",
+  "repository": "https://github.com/dglcinc/MLB.git",
   "description": "Mountain Lakes Bowling League Manager",
   "author": "David Lewis",
-  "license": "Apache 2.0",
+  "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.6.7",
     "uuid": "^2.0.3",

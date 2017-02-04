@@ -30,7 +30,6 @@ functions:
           method: post
           cors: true
 
-
   listBowlers:
     handler: bowlers/list.list
     events:
@@ -43,7 +42,7 @@ functions:
     handler: bowlers/get.get
     events:
       - http:
-          path: bowler/{uid}
+          path: bowler/{name}
           method: get
           cors: true
 
@@ -51,7 +50,7 @@ functions:
     handler: bowlers/update.update
     events:
       - http:
-          path: bowler/{uid}
+          path: bowler/{name}
           method: put
           cors: true
 
@@ -59,7 +58,48 @@ functions:
     handler: bowlers/delete.delete
     events:
       - http:
-          path: bowler/{uid}
+          path: bowler/{name}
+          method: delete
+          cors: true
+          
+  createEvent:
+    handler: events/create.create
+    events:
+      - http:
+          path: event
+          method: post
+          cors: true
+
+
+  listEvents:
+    handler: events/list.list
+    events:
+      - http:
+          path: events/{season}
+          method: get
+          cors: true
+
+  getEvent:
+    handler: events/get.get
+    events:
+      - http:
+          path: event/{date}
+          method: get
+          cors: true
+
+  updateEvent:
+    handler: events/update.update
+    events:
+      - http:
+          path: event/{date}
+          method: put
+          cors: true
+
+  deleteEvent:
+    handler: events/delete.delete
+    events:
+      - http:
+          path: event/{date}
           method: delete
           cors: true
 
@@ -70,15 +110,11 @@ resources:
       #DeletionPolicy: Retain
       Properties:
         AttributeDefinitions:
-          - AttributeName: "uid"
-            AttributeType: S
-          - AttributeName: "lastname"
+          - AttributeName: "name"
             AttributeType: S
         KeySchema:
-          - AttributeName: "uid"
+          - AttributeName: "name"
             KeyType: "HASH"
-          - AttributeName: "lastname"
-            KeyType: "RANGE"
         ProvisionedThroughput:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
@@ -101,22 +137,3 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
         TableName: 'mlb_event'
-    ScheduleTable:
-      Type: 'AWS::DynamoDB::Table'
-      #DeletionPolicy: Retain
-      Properties:
-        AttributeDefinitions:
-          - AttributeName: "uid"
-            AttributeType: S
-          - AttributeName: "e_uid"
-            AttributeType: S
-        KeySchema:
-          - AttributeName: "uid"
-            KeyType: "HASH"
-          - AttributeName: "e_uid"
-            KeyType: "RANGE"
-        ProvisionedThroughput:
-          ReadCapacityUnits: 1
-          WriteCapacityUnits: 1
-        TableName: 'mlb_schedule'
-        

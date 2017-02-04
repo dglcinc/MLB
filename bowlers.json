@@ -1,9 +1,8 @@
 [
     {
-        "firstname": "Bill",
-        "lastname": "Albergo",
+        "name": "Bill Albergo",
         "clubmember": false,
-	"handicap": 45,
+	"handicap": 44,
         "team": 1,
         "address": "78 Lookout Road",
         "city": "Mountain Lakes",
@@ -23,10 +22,9 @@
       ]
     },
     {
-        "firstname": "Jeff",
-        "lastname": "Cassidy",
+        "name": "Jeff Cassidy",
         "clubmember": false,
-	"handicap": 55,
+	"handicap": 56,
         "team": 1,
         "address": "256 Boulevard",
         "city": "Mountain Lakes",
@@ -46,8 +44,7 @@
         ]
     },
     {
-      "firstname": "Tom",
-      "lastname": "Dagger",
+      "name": "Tom Dagger",
       "clubmember": false,
 	"handicap": 83,
         "team": 1,
@@ -69,11 +66,10 @@
       ]
     },
     {
-      "firstname": "Ted",
-      "lastname": "Harvey",
+      "name": "Ted Harvey",
         "team": 1,
       "clubmember": false,
-	"handicap": 55,
+	"handicap": 54,
       "address": "14 Dartmouth Road",
       "city": "Mountain Lakes",
       "state": "NJ",
@@ -91,10 +87,9 @@
       ]
     },
     {
-      "firstname": "David",
-      "lastname": "Keyt",
+      "name": "David Keyt",
       "clubmember": true,
-	"handicap": 55,
+	"handicap": 67,
         "team": 1,
       "address": "109 Hanover Road",
       "city": "Mountain Lakes",
@@ -114,10 +109,9 @@
       ]
     },
     {
-      "firstname": "Brian",
-      "lastname": "Lewis",
+      "name": "Brian Lewis",
       "clubmember": true,
-	"handicap": 55,
+	"handicap": 65,
         "team": 1,
       "address": "75 Crestview",
       "city": "Mountain Lakes",
@@ -137,8 +131,7 @@
       ]
     },
     {
-      "firstname": "David",
-      "lastname": "Lewis",
+      "name": "David Lewis",
       "clubmember": false,
 	"handicap": 55,
         "team": 1,
@@ -162,10 +155,9 @@
       ]
     },
     {
-      "firstname": "Peter",
-      "lastname": "Nix",
+      "name": "Peter Nix",
       "clubmember": false,
-	"handicap": 55,
+	"handicap": 68,
       "team": 1,
       "address": "11 Hillcrest Road",
       "city": "Mountain Lakes",
@@ -181,12 +173,13 @@
         }
       ],
       "roles": [
-        "bowler"
+        "bowler",
+        "organizer",
+        "deputy"
       ]
     },
     {
-      "firstname": "TJ",
-      "lastname": "Kanaris",
+      "name": "TJ Kanaris",
       "clubmember": true,
 	"handicap": 93,
       "team": 1,
@@ -207,10 +200,9 @@
       ]
     },
     {
-      "firstname": "John",
-      "lastname": "Maione Jr.",
+      "name": "John Maione Jr.",
       "clubmember": false,
-	"handicap": 55,
+	"handicap": 67,
       "team": 1,
       "address": "30 Powerville Road",
       "city": "Mountain Lakes",
@@ -229,8 +221,7 @@
       ]
     },
     {
-      "firstname": "Todd",
-      "lastname": "Terhune",
+      "name": "Todd Terhune",
       "clubmember": false,
 	"handicap": 45,
       "team": 1,
@@ -253,10 +244,9 @@
       ]
     },
     {
-      "firstname": "Gordon",
-      "lastname": "Stuss",
+      "name": "Gordon Stuss",
       "clubmember": false,
-	"handicap": 85,
+	"handicap": 87,
       "team": 1,
       "address": "99 Morris Ave.",
       "city": "Mountain Lakes",
