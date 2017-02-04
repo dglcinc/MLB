@@ -1,0 +1,25 @@
+{
+    "title": "Schedule",
+    "type": "object",
+    "properties": {
+        "date": {
+            "type": "string",
+            "minLength": 8
+        },
+        "name": {
+            "type": "string",
+            "minLength": 5
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "N/A",
+                "sub",
+                "bowling",
+                "available",
+                "confirmed"
+            ],
+            "default": "bowling"
+        },
+    }
+}

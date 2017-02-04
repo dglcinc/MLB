@@ -1,0 +1,84 @@
+[
+    {
+      "date": "2017-01-25",
+      "season": "2016-2017",
+      "week": 14,
+      "type": "regular",
+      "bracket": "2-3 1-4",
+      "schedule": [
+        {
+          "name": "Bill Albergo",
+          "role": "bowling"
+        },
+        {
+          "name": "Brian Lewis",
+          "role": "N/A"
+        },
+        {
+          "name": "David Lewis",
+          "role": "sub"
+        },
+        {
+          "name": "John Maione",
+          "role": "bowling"
+        },
+        {
+          "name": "Peter Nix",
+          "role": "bowling"
+        },
+        {
+          "name": "Ted Harvey",
+          "role": "sub"
+        },
+        {
+          "name": "TJ Kanaris",
+          "role": "sub"
+        },
+        {
+          "name": "Tom Dagger",
+          "role": "N/A"
+        }
+      ]
+    },
+    {
+      "date": "2017-01-26",
+      "season": "2016-2017",
+      "week": 14,
+      "type": "regular",
+      "bracket": "2-1 4-3",
+      "schedule": [
+        {
+          "name": "Brian Lewis",
+          "role": "N/A"
+        },
+        {
+          "name": "David Keyt",
+          "role": "bowling"
+        },
+        {
+          "name": "David Lewis",
+          "role": "sub"
+        },
+        {
+          "name": "Gordon Stuss",
+          "role": "bowling"
+        },
+        {
+          "name": "Jeff Cassidy",
+          "role": "bowling"
+        },
+        {
+          "name": "Ted Harvey",
+          "role": "sub"
+        },
+        {
+          "name": "Todd Terhune",
+          "role": "bowling"
+        },
+        {
+          "name": "Tom Dagger",
+          "role": "N/A"
+        }
+      ]
+    }
+]

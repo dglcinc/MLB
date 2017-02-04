@@ -1,0 +1,63 @@
+{
+    "title": "Event",
+    "type": "object",
+    "properties": {
+        "date": {
+            "type": "string",
+            "minLength": 8,
+            "default": "2017-00-00"
+        },
+        "season": {
+            "type": "string",
+            "minLength": 9,
+            "default": "2016-2017"
+        },
+        "week": {
+            "type": "integer",
+            "default": 1
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "regular",
+                "position",
+                "tournament",
+                "banquet",
+                "other"
+            ],
+            "default": "regular"
+        },
+        "bracket": {
+            "type": "string",
+            "default": "1-2 3-4"
+        },
+        "schedule": {
+            "type": "array",
+            "format": "table",
+            "title": "Schedule",
+            "uniqueItems": true,
+            "items": {
+                "type": "object",
+                "title": "Attendee",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "minLength": 5
+                    },
+                    "role": {
+                        "type": "string",
+                        "enum": [
+                            "N/A",
+                            "sub",
+                            "bowling",
+                            "available",
+                            "confirmed",
+                            "tentative"
+                        ],
+                        "default": "bowling"
+                    }
+                }
+            }
+        }
+    }
+}
